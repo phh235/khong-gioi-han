@@ -1,4 +1,6 @@
-* {
+*,
+html,
+body {
   font-family: "Google Sans" !important;
 }
 
