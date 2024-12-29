@@ -1,7 +1,7 @@
-*,
+#app,
 html,
 body {
-  font-family: "Google Sans" !important;
+  font-family: "Google Sans";
 }
 
 .btn-close {
