@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 15px;
+  padding: 10px;
   z-index: 100;
 }
 
