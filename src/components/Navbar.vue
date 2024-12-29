@@ -1,8 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
-      <router-link class="navbar-brand" to="/"><img src="" alt="logo" width="50"
-          height="50"></router-link>
+      <router-link class="navbar-brand" to="/"><img src="" alt="logo" width="50" height="50"></router-link>
       <span class="navbar-toggler navbar-toggler-icon border-0" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="cursor: pointer;"></span>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
