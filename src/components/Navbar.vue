@@ -7,7 +7,7 @@
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
         style="width: 300px;">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sửa xe điện kv Dĩ An</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sửa xe điện khu vực Dĩ An</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -16,6 +16,12 @@
               <router-link class="nav-link d-flex align-items-center active" aria-current="page" to="/">
                 <span class="material-symbols-outlined me-2">home</span>
                 Trang chủ
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link d-flex align-items-center" to="/san-pham">
+                <span class="material-symbols-outlined me-2">shopping_cart</span>
+                Sản phẩm
               </router-link>
             </li>
             <li class="nav-item">

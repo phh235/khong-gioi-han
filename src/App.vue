@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="container">
+  <div class="container py-4 px-0">
     <router-view></router-view>
   </div>
   <Footer />

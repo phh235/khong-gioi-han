@@ -25,12 +25,35 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
-          <h1 class="text-danger">0326919954</h1>
+          <div class="d-flex align-items-baseline justify-content-between">
+            <div class="mx-auto">
+              <h1 class="text-danger fw-bold ms-5">0326919954</h1>
+            </div>
+            <span class="material-symbols-outlined" @click="copyToClipboard">content_copy</span>
+          </div>
+          <div v-if="alertVisible" class="alert alert-success" role="alert">
+            Đã sao chép số điện thoại!
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+
+const alertVisible = ref(false);
+
+const copyToClipboard = () => {
+  navigator.clipboard.writeText('0326919954').then(() => {
+    alertVisible.value = true;
+    setTimeout(() => {
+      alertVisible.value = false;
+    }, 3000);
+  });
+}
+</script>
 
 <style scoped>
 .contact-buttons {
@@ -39,8 +62,8 @@
   right: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 10px;
+  gap: 20px;
+  padding: 15px;
   z-index: 100;
 }
 
@@ -56,7 +79,6 @@
   position: relative;
   transform: scale(1);
   cursor: pointer;
-  transition: all .2s ease;
 }
 
 .btn-zalo {
@@ -143,5 +165,20 @@
     right: 10px;
     bottom: 10px;
   }
+}
+
+.material-symbols-outlined {
+  padding: 10px;
+  border-radius: 10px;
+  transition: all .2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #e4e4e7;
+  }
+}
+
+.alert {
+  border-radius: 1rem;
 }
 </style>
