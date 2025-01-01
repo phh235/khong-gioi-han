@@ -1,8 +1,9 @@
 <template>
   <!-- <Product /> -->
   <h1>Giới thiệu</h1>
+  <Post />
 </template>
 
 <script setup>
-// import Product from "../components/Product.vue";
+import Post from "../components/Post.vue";
 </script>

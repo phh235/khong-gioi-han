@@ -28,13 +28,14 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useApiService } from '../services/apiServices';
+import axios from 'axios';
 
 const apiService = useApiService();
 const services = ref([]);
 
 onMounted(async () => {
-  await apiService.get('services');
-  services.value = apiService.data;
+  const response = await axios.get('https://script.google.com/macros/s/AKfycbyVkq0jeX2qcakeROl4fyhvzY_t67LWy4WnoBNLXQVChMN8zoDn48XlmsSDnJXHe9d4/exec')
+  services.value = response.data;
 });
 </script>
 
